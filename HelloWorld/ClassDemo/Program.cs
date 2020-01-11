@@ -12,6 +12,7 @@ namespace ClassDemo
         {
             string name;
 
+            Console.WriteLine("Hello World")
             Console.WriteLine("Please Enter Your Name: ");
             name = Console.ReadLine();
             Console.WriteLine("Hello World from " + name + "!");
