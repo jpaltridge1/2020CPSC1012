@@ -17,11 +17,9 @@ namespace DistanceConversion
             const double convfromKm = 0.621371;
 
             Console.WriteLine("This Program  is here to convert Mileage for either Miles to Kilometers or Kilometers to Miles.\n");
-            
-                        Console.WriteLine("Please press (k) to convert Miles to Kilometers or Press (m) to Convert Kilometers to Miles. \n");
+            Console.WriteLine("Please press (k) to convert Miles to Kilometers or Press (m) to Convert Kilometers to Miles. \n");
             keypress = Console.ReadKey();
             
-
             if (keypress.KeyChar == 'k')
             {
                 Console.WriteLine("\n Please enter distance in Miles: ");
