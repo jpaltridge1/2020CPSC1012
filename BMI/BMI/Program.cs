@@ -16,7 +16,7 @@ namespace BMI
             Console.WriteLine("Please Enter your Name: ");
             Name = Console.ReadLine();
             Console.WriteLine("Press (M) for Metric or (I) for Imperial measurements:");
-            Units = Console.readkey()
+            Console.ReadKey();
         }
     }
 }
