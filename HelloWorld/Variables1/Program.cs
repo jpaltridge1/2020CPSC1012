@@ -28,7 +28,7 @@ namespace Variables1
 
             decimal myWeight, myHeight;
             decimal BMI = 0.0m;
-
+            
             //constant unchanging values are declared using the const syntax
 
             const decimal ImperialBMI = 703;
@@ -42,7 +42,7 @@ namespace Variables1
             //intergers have no decimal places
             //dounbles are the default but may explicitly be type using a d
             //decimal require to be explicitly typed using a m
-
+            // you cannot change the value of a const variable 
 
             myWeight = 110;
             myHeight = 1.75m;
@@ -53,8 +53,17 @@ namespace Variables1
             // * / %
             // + -
 
-            BMI = myWeight / myHeight * myHeight;
-            Console.WriteLine("According to your metric Weight and Height you BMI is {0}", BMI);
+            BMI = myWeight / (myHeight * myHeight);
+            Console.WriteLine("According to your metric Weight and Height your BMI is {0:0.0}", BMI);
+            Console.WriteLine("According to your metric weight of {0:0.0} and Height of {0:0.0} your BMI is {0:0.0}", myWeight, myHeight, BMI);
+
+            // imperial calulation
+            myWeight = 242.5m;
+            myHeight = 69.0m;
+            BMI = (myWeight * ImperialBMI) / (myHeight * myHeight);
+
+            Console.WriteLine ($"According to your Imperial weight of {myWeight:0.00} and Height of {myHeight:0.00} your BMI is {BMI:0.00}");
+
 
         }
     }
