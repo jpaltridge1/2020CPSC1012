@@ -27,8 +27,7 @@ namespace HighMidLow
             num3 = int.Parse(num3Input);
 
             highest = num1;
-            mid = num2;
-            lowest = num3;
+           
 
             if (num2 > highest)
             {
@@ -48,7 +47,14 @@ namespace HighMidLow
                         highest = num2;
                         mid = num3;
                         lowest = num1;
-                    }    
+                    }   
+                    
+                    else
+                    {
+                        highest = num2;
+                        mid = num1;
+                        lowest = num3;
+                    }
                 }
             
             }
@@ -58,7 +64,7 @@ namespace HighMidLow
                 {
                     highest = num1;
                     mid = num2;
-                    highest = num3;
+                    lowest = num3;
                 }
 
                 else
